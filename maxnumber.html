@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="text" />
+    <button id="btn" onclick="myFunction()">click</button>
+    <button onclick="myFunction1()">max</button>
+    <p>enter numbers:</p>
+    <p id="demo"></p>
+    <p>maximum number is:</p>
+    <p id="demo1"></p>
+    <script>
+        var ab = [];
+        var x;
+        var y = [];
+        function myFunction() {
+            x = document.getElementById("text").value;
+            document.getElementById("demo").innerHTML += x + " ";
+            ab.push(x);
+            document.getElementById('text').value = "";
+            //console.log(ab);
+        }
+        function myFunction1() {
+            //y=ab.sort();
+            y = ab.sort(function (a, b) { return a - b });
+            document.getElementById("demo1").innerHTML = y[(y.length) - 1];
+            console.log(y[(y.length) - 1]);
+            document.getElementById("btn").disabled = "true";
+        }
+</script>
+</body>
+
+</html>
