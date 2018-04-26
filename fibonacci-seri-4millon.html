@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var a=1,b=2,c,x,sum=2;
+    document.write(a+" "+b+" ");
+    document.write(c=a+b);
+    var x=prompt("enter the value");
+    if(x<=32)
+    {
+    for(i=3;i<x;i++)
+    {
+    a=b;
+    b=c;
+    c=a+b;
+    document.write(" "+c+" ");
+    if(c%2==0)
+    {
+    sum=sum+c;
+    }
+    console.log(sum);
+        }
+        }
+        else
+        {
+           alert("it exceeds four million/enter number 32 or below")
+        }
+</script>
+</body>
+</html>
