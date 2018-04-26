@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>circular</title>
+</head>
+<body>
+    <script>var a,n, sr="",p="",r="",b="",f="",m="",j="",s,i,y=0,q=0,w=0,u=0,d,c,e,h=0,l=0,v=0,ar;
+    var a=prompt("enter number");
+        sr=a.toString();
+        s=parseInt(sr);
+        //console.log(s);
+            for(i=1;i<=s;i++) {
+            if(s%i==0){
+                u++;
+            }
+        }
+        if(u==2){
+            console.log(s+" "+" is a prime")
+        }
+        else{
+            console.log(s+" "+"it is not prime")
+        }
+        
+        p=sr.substring(1)+sr.charAt(0);
+        c=parseInt(p);
+        //console.log(c);
+            for(i=1;i<=c;i++) {
+            if(c%i==0){
+                y++;
+            }
+        }
+        if(y==2){
+            console.log(c+" "+"it is aprime")
+        }
+        else{
+            console.log(c+" "+"it is not prime")
+        }
+        r=p.substring(1)+p.charAt(0);
+        d=parseInt(r);
+        //console.log(d);
+            for(i=1;i<=d;i++) {
+            if(d%i==0){
+                q++;
+            }
+        }
+        if(q==2){
+            console.log(d+" "+"it is aprime")
+        }
+        else{
+            console.log(d+" "+"it is not prime")
+        }
+        b=r.substring(1)+r.charAt(0);
+        e=parseInt(b);
+        //console.log(e);
+            for(i=1;i<=e;i++) {
+            if(e%i==0){
+                w++;
+            }
+        }
+        if(w==2){
+            console.log(e+" "+"it is aprime")
+        }
+        else{
+            console.log(e+" "+"it is not prime")
+        }
+        f=b.substring(1)+b.charAt(0);
+        g=parseInt(f);
+        //console.log(g);
+            for(i=1;i<=g;i++) {
+            if(g%i==0){
+                h++;
+            }
+        }
+        if(h==2){
+            console.log(g+" "+"it is aprime")
+        }
+        else{
+            console.log(g+" "+"it is not prime")
+        }
+        m=f.substring(1)+f.charAt(0);
+        o=parseInt(m);
+        //console.log(o);
+            for(i=1;i<=o;i++) {
+            if(o%i==0){
+                v++;
+            }
+        }
+        if(v==2){
+            console.log(o+" "+"it is aprime")
+        }
+        else{
+            console.log(o+" "+"it is not prime")
+        }
+        j=m.substring(1)+m.charAt(0);
+        k=parseInt(j);
+        //console.log(k);
+            for(i=1;i<=k;i++) {
+            if(k%i==0){
+                l++;
+            }
+        }
+        if(l==2){
+            console.log(k+" "+"it is aprime")
+        }
+        else{
+            console.log(k+" "+"it is not prime")
+        }
+        if(u==2&&y==2&&q==2&&w==2&&h==2&&v==2&&l==2){
+            console.log(s+" "+ "is circular prime");
+        }
+        else{
+            console.log(s+" "+"is not circular prime");
+        }
+    </script>
+</body>
+</html>
