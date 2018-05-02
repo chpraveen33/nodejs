@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = [5, 2, 6, 8, 3, 90, 22];
+        var sortedStack = [];
+
+        function my(y) {
+            var min = y[0], index = 0, i, temp = [],temp1=[],x,n=[];
+            console.log(y)
+            index=getMin(y,min);
+            y.forEach(function(p){
+                temp1.push(p);
+            })
+            console.log(temp1)
+            for (i = 0; i< (temp1.length)-index-1; i++) {
+                x=y.pop();
+                temp.push(x);
+            }
+            console.log(y);
+            sortedStack.push(y.pop());
+            temp.forEach(function(p){
+                n.push(p);
+            })
+            console.log(n);
+            for (i = 0; i < n.length; i++) {
+                y.push(temp.pop());
+            }
+            n=[];
+            y.forEach(function(p){
+                n.push(p);
+            })
+            if (n.length) {
+               // console.log(y)
+                my(n)
+            }
+            return sortedStack;
+        }
+        document.write(my([5, 2, 6, 8, 3, 90, 22]));
+    //    my([5, 2, 6, 8, 3, 90, 22]);
+
+        function getMin(y,min){
+            var index=0,i;
+            for (i = 1; i < y.length; i++) {
+                if (min > y[i]) {
+                    min = y[i];
+                    index = i;
+                }
+            }
+            return index;
+        }
+    </script>
+
+</body>
+
+</html>
